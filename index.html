@@ -74,7 +74,7 @@
     </div></div></section>
 
     <section class="section-pad plans" id="plans"><div class="container"><h2 class="section-title">量身打造，滿足不同旅遊需求</h2><div class="row g-4">
-      <div class="col-lg-4"><article class="plan-card"><img src="images/banner-6.jpg" alt="穿著和服漫遊日本古街的旅人"><div class="card-body"><h3>小資／蜜月</h3><ul><li><i class="bi bi-check-circle"></i>高 CP 值玩法，質感不打折</li><li><i class="bi bi-check-circle"></i>浪漫行程，留下美好回憶</li></ul><a href="#booking" class="btn btn-gold w-100">了解更多 <i class="bi bi-chevron-right float-end"></i></a></div></article></div>
+      <div class="col-lg-4"><article class="plan-card"><img src="images/banner-6.jpg" alt="穿著和服漫遊日本古街的旅人"><div class="card-body"><h3>小資／蜜月</h3><ul><li><i class="bi bi-check-circle"></i>高 CP 值玩法，質感不打折</li><li><i class="bi bi-check-circle"></i>浪漫行程，留下美好回憶</li></ul><a href="#booking" class="btn btn-gold w-100 btnstyle">加入購物車 <i class="bi bi-chevron-right float-end"></i></a></div></article></div>
       <div class="col-lg-4"><article class="plan-card"><img src="images/banner-3.jpg" alt="適合親子共遊的日本寺院景色"><div class="card-body"><h3>小家庭／樂齡</h3><ul><li><i class="bi bi-check-circle"></i>輕鬆悠閒好安排，大人小孩都開心</li><li><i class="bi bi-check-circle"></i>貼心行程設計，長輩也安心</li></ul><a href="#booking" class="btn btn-gold w-100">了解更多 <i class="bi bi-chevron-right float-end"></i></a></div></article></div>
       <div class="col-lg-4"><article class="plan-card"><img src="images/banner-2.jpg" alt="日本伏見稻荷大社千本鳥居"><div class="card-body"><h3>企業團體</h3><ul><li><i class="bi bi-check-circle"></i>客製化團體行程，凝聚團隊向心力</li><li><i class="bi bi-check-circle"></i>彈性預算規劃，專屬服務最到位</li></ul><a href="#booking" class="btn btn-gold w-100">了解更多 <i class="bi bi-chevron-right float-end"></i></a></div></article></div>
     </div></div></section>
@@ -97,6 +97,43 @@
   <script>
     document.getElementById('consultForm').addEventListener('submit',function(e){e.preventDefault();if(this.checkValidity()){bootstrap.Toast.getOrCreateInstance(document.getElementById('successToast')).show();this.reset()}else{this.classList.add('was-validated')}});
     document.querySelectorAll('#mainNav .nav-link').forEach(function(link){link.addEventListener('click',function(){var menu=document.getElementById('mainNav');if(menu.classList.contains('show')){bootstrap.Collapse.getOrCreateInstance(menu).hide()}})});
+  </script>
+  <script>
+    //addEventListener效果
+    var abc = document.querySelector(".btnstyle");
+    abc.addEventListener(
+    "click",function () {
+
+            gtag("event", "add_to_cart", {
+            currency: "新台幣",
+            value: 807,
+            items: [
+                {
+                item_id: "SKU_12345",
+                item_name: "Stan and Friends Tee",
+                affiliation: "Google Merchandise Store",
+                coupon: "SUMMER_FUN",
+                discount: 2.22,
+                index: 0,
+                item_brand: "Google",
+                item_category: "Apparel",
+                item_category2: "Adult",
+                item_category3: "Shirts",
+                item_category4: "Crew",
+                item_category5: "Short sleeve",
+                item_list_id: "related_products",
+                item_list_name: "Related Products",
+                item_variant: "green",
+                location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+                price: 10.01,
+                google_business_vertical: "retail",
+                quantity: 3
+                }
+            ]
+            });
+
+        },false
+    );
   </script>
 </body>
 </html>
