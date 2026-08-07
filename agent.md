@@ -89,3 +89,6 @@ USER NAME:breathtiger
 專案名稱：Huafantravel-20260807
 HTTPS:https://github.com/breathtiger/Huafantravel-20260807.git
 SSH:git@github.com:breathtiger/Huafantravel-20260807.git
+
+## Github發布網址
+https://breathtiger.github.io/Huafantravel-20260807/
