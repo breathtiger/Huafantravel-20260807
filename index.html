@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="華梵旅遊提供日本與韓國的客製化深度旅遊規劃服務。">
+  <title>華梵旅遊｜日韓客製深度旅行</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    :root{--navy:#062947;--navy-2:#0d3656;--gold:#d79c1b;--gold-2:#f0bb34;--cream:#fbf8f2;--muted:#68717a}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:76px}
+    body{font-family:"Noto Sans TC",sans-serif;color:var(--navy);background:#fff;line-height:1.75}
+    h1,h2,h3,h4,.navbar-brand,.serif{font-family:"Noto Serif TC",serif}
+    .text-gold{color:var(--gold)!important}.section-pad{padding:72px 0}.section-title{font-size:clamp(1.65rem,3vw,2.25rem);font-weight:700;letter-spacing:.08em;text-align:center;margin-bottom:38px}.section-title:before,.section-title:after{content:"";display:inline-block;width:74px;height:1px;background:var(--gold);vertical-align:middle;margin:0 28px}
+    .navbar{background:rgba(3,35,61,.96);min-height:76px;box-shadow:0 2px 18px rgba(0,0,0,.12)}
+    .navbar-brand{color:#fff!important;font-size:1.75rem;font-weight:700;letter-spacing:.12em}.navbar .nav-link{color:rgba(255,255,255,.9)!important;font-weight:500;margin:0 13px}.navbar .nav-link:hover{color:var(--gold-2)!important}.navbar-toggler{border-color:rgba(255,255,255,.4)}.navbar-toggler-icon{filter:invert(1)}
+    .btn-gold{color:#fff;border:0;background:linear-gradient(100deg,var(--gold),var(--gold-2),#c98c0c);font-weight:700;letter-spacing:.05em;box-shadow:0 8px 24px rgba(183,125,6,.22);transition:.25s}.btn-gold:hover{color:#fff;transform:translateY(-2px);box-shadow:0 12px 28px rgba(183,125,6,.32)}
+    .hero{min-height:640px;background:linear-gradient(90deg,rgba(3,32,57,.95) 0%,rgba(3,32,57,.72) 38%,rgba(3,32,57,.15) 72%),url('images/banner-4.jpg') center 58%/cover no-repeat;display:flex;align-items:center;color:#fff;padding-top:76px}
+    .hero h1{font-size:clamp(2.2rem,5vw,4rem);font-weight:800;line-height:1.45;letter-spacing:.08em;text-shadow:0 3px 18px rgba(0,0,0,.4)}.hero .lead{color:#efb633;font-weight:600;font-size:1.15rem;margin:24px 0 32px}.hero .btn{padding:15px 30px;font-size:1.08rem}
+    .pain-card{height:100%;border:1px solid #e6e8eb;border-radius:12px;padding:30px 18px;text-align:center;background:#fff;box-shadow:0 7px 20px rgba(1,35,61,.07);transition:.25s}.pain-card:hover{transform:translateY(-6px)}.pain-card i{font-size:2.7rem;display:block;margin-bottom:14px}.pain-card h3{font-size:1.04rem;font-weight:700}.pain-card p{font-size:.92rem;color:var(--muted);margin:0}
+    .service-intro{background:linear-gradient(110deg,#fbf8f2,#fffdf8,#f8f3ea)}.why-card{text-align:center;padding:0 42px;height:100%}.why-card+.why-card{border-left:1px dotted #c9a14d}.icon-gold{width:74px;height:74px;display:grid;place-items:center;margin:0 auto 14px;border-radius:50%;color:#fff;background:linear-gradient(145deg,#bd7e06,#edbd3a);font-size:2rem}.why-card .en{font-family:Georgia,serif;color:var(--gold);font-size:1.25rem;font-weight:700}.why-card h3{font-size:1.3rem;font-weight:700;margin:8px 0 12px}.why-card p{color:#4e555b;margin:0}
+    .plans{background:#fff}.plan-card{border:1px solid #e4e7e9;border-radius:14px;overflow:hidden;height:100%;box-shadow:0 9px 23px rgba(2,38,66,.08);transition:.25s}.plan-card:hover{transform:translateY(-6px);box-shadow:0 15px 34px rgba(2,38,66,.13)}.plan-card img{width:100%;height:225px;object-fit:cover}.plan-card .card-body{padding:20px 26px 24px}.plan-card h3{text-align:center;font-size:1.35rem;font-weight:700}.plan-card ul{list-style:none;padding:0;margin:16px 0}.plan-card li{margin:8px 0;color:#3f464d}.plan-card li i{color:var(--gold);margin-right:8px}
+    .features{background:var(--cream)}.feature-item{text-align:center;padding:5px 28px}.feature-item+.feature-item{border-left:1px dotted #c9a14d}.feature-item i{font-size:2.8rem}.feature-item h3{font-size:1.12rem;font-weight:700;margin:10px 0 2px}.feature-item p{font-size:.92rem;color:#525a62;margin:0}
+    .booking{position:relative;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.98) 50%,rgba(255,255,255,.22) 76%),url('images/banner-6.jpg') center/cover no-repeat}.booking h2{font-size:clamp(1.8rem,3vw,2.55rem);font-weight:700;line-height:1.55}.booking-list{list-style:none;padding:0;margin-top:22px}.booking-list li{margin:13px 0}.booking-list i{color:var(--gold);margin-right:10px}.booking-form{background:rgba(255,255,255,.96);padding:32px;border-radius:15px;box-shadow:0 8px 28px rgba(4,35,60,.18);border:1px solid rgba(5,43,73,.1)}.form-label{font-weight:700;font-size:.9rem}.form-control,.form-select{min-height:48px;border-color:#dfe2e5}.privacy{font-size:.76rem;color:#66717a}.privacy i{color:var(--gold)}
+    footer{background:#03233d;color:rgba(255,255,255,.72);padding:30px 0}.back-top{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#fff;text-decoration:none;box-shadow:0 5px 17px rgba(0,0,0,.18);z-index:20}
+    @media(max-width:991.98px){.navbar-collapse{padding:15px 0 22px}.navbar .nav-link{margin:4px 0}.hero{min-height:580px;background-position:63% center}.section-title:before,.section-title:after{width:38px;margin:0 13px}.why-card{padding:25px 20px}.why-card+.why-card{border-left:0;border-top:1px dotted #c9a14d}.feature-item{padding:25px 15px}.feature-item+.feature-item{border-left:0}.booking{background:linear-gradient(rgba(255,255,255,.94),rgba(255,255,255,.94)),url('images/banner-6.jpg') center/cover}}
+    @media(max-width:575.98px){.section-pad{padding:52px 0}.hero{text-align:center;min-height:550px;background:linear-gradient(rgba(3,32,57,.73),rgba(3,32,57,.8)),url('images/banner-4.jpg') 66% center/cover}.hero h1{font-size:2rem}.hero .lead{font-size:1rem}.section-title{line-height:1.5}.section-title:before,.section-title:after{display:none}.plan-card img{height:210px}.booking-form{padding:23px}.navbar-brand{font-size:1.4rem}}
+  </style>
+</head>
+<body id="top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="主要導覽">
+    <div class="container">
+      <a class="navbar-brand" href="#top">華梵旅遊</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="開啟導覽選單"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#top">首頁</a></li><li class="nav-item"><a class="nav-link" href="#pain">為什麼選擇華梵？</a></li><li class="nav-item"><a class="nav-link" href="#service">專屬策劃方案</a></li><li class="nav-item"><a class="nav-link" href="#plans">嚴選日韓深度行程</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-gold px-4 py-2" href="#booking">免費預約規劃</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container"><div class="row"><div class="col-lg-8 col-xl-7"><h1>別再把珍貴的假期，<br>浪費在行軍般的疲憊行程裡！</h1><p class="lead">為您與最愛的人，量身打造有溫度的日韓客製旅行</p><a class="btn btn-gold" href="#booking">限時免費｜預約專屬旅遊顧問 <i class="bi bi-chevron-right ms-2"></i></a></div></div></div>
+  </header>
+
+  <main>
+    <section class="section-pad" id="pain"><div class="container"><h2 class="section-title">本來想放鬆，行前做功課卻比上班還累？</h2><div class="row g-4">
+      <div class="col-6 col-lg-3"><div class="pain-card"><i class="bi bi-map text-gold"></i><h3>景點太多不知怎麼排</h3><p>做功課耗時又傷腦筋</p></div></div>
+      <div class="col-6 col-lg-3"><div class="pain-card"><i class="bi bi-clock text-gold"></i><h3>交通複雜轉乘麻煩</h3><p>浪費時間又不便</p></div></div>
+      <div class="col-6 col-lg-3"><div class="pain-card"><i class="bi bi-wallet2 text-gold"></i><h3>預算難抓超容易爆</h3><p>隱藏花費一堆</p></div></div>
+      <div class="col-6 col-lg-3"><div class="pain-card"><i class="bi bi-suitcase-lg text-gold"></i><h3>行程太緊沒時間休息</h3><p>回國更累</p></div></div>
+    </div></div></section>
+
+    <section class="section-pad service-intro" id="service"><div class="container"><h2 class="section-title">全包式客製規劃服務</h2><div class="row g-0">
+      <div class="col-lg-4 why-card"><div class="icon-gold"><i class="bi bi-heart"></i></div><div class="en">WHY</div><h3>讓旅行更有溫度</h3><p>我們在乎您的需求，讓每一步都值得回憶。</p></div>
+      <div class="col-lg-4 why-card"><div class="icon-gold"><i class="bi bi-people"></i></div><div class="en">HOW</div><h3>一對一量身打造</h3><p>旅遊顧問深入了解，打造專屬於您的完美行程。</p></div>
+      <div class="col-lg-4 why-card"><div class="icon-gold"><i class="bi bi-geo-alt"></i></div><div class="en">WHAT</div><h3>日韓深度旅遊</h3><p>精選在地體驗與特色住宿，玩得更深入、更有感。</p></div>
+    </div></div></section>
+
+    <section class="section-pad plans" id="plans"><div class="container"><h2 class="section-title">量身打造，滿足不同旅遊需求</h2><div class="row g-4">
+      <div class="col-lg-4"><article class="plan-card"><img src="images/banner-6.jpg" alt="穿著和服漫遊日本古街的旅人"><div class="card-body"><h3>小資／蜜月</h3><ul><li><i class="bi bi-check-circle"></i>高 CP 值玩法，質感不打折</li><li><i class="bi bi-check-circle"></i>浪漫行程，留下美好回憶</li></ul><a href="#booking" class="btn btn-gold w-100">了解更多 <i class="bi bi-chevron-right float-end"></i></a></div></article></div>
+      <div class="col-lg-4"><article class="plan-card"><img src="images/banner-3.jpg" alt="適合親子共遊的日本寺院景色"><div class="card-body"><h3>小家庭／樂齡</h3><ul><li><i class="bi bi-check-circle"></i>輕鬆悠閒好安排，大人小孩都開心</li><li><i class="bi bi-check-circle"></i>貼心行程設計，長輩也安心</li></ul><a href="#booking" class="btn btn-gold w-100">了解更多 <i class="bi bi-chevron-right float-end"></i></a></div></article></div>
+      <div class="col-lg-4"><article class="plan-card"><img src="images/banner-2.jpg" alt="日本伏見稻荷大社千本鳥居"><div class="card-body"><h3>企業團體</h3><ul><li><i class="bi bi-check-circle"></i>客製化團體行程，凝聚團隊向心力</li><li><i class="bi bi-check-circle"></i>彈性預算規劃，專屬服務最到位</li></ul><a href="#booking" class="btn btn-gold w-100">了解更多 <i class="bi bi-chevron-right float-end"></i></a></div></article></div>
+    </div></div></section>
+
+    <section class="section-pad features"><div class="container"><div class="row">
+      <div class="col-6 col-lg-3 feature-item"><i class="bi bi-clipboard2-check text-gold"></i><h3>專屬企劃</h3><p>一對一顧問<br>專屬行程設計</p></div>
+      <div class="col-6 col-lg-3 feature-item"><i class="bi bi-bag-heart text-gold"></i><h3>保證無購物站</h3><p>純粹旅遊體驗<br>不進購物站</p></div>
+      <div class="col-6 col-lg-3 feature-item"><i class="bi bi-building text-gold"></i><h3>日韓在地深度</h3><p>精選在地特色體驗<br>玩得更深入</p></div>
+      <div class="col-6 col-lg-3 feature-item"><i class="bi bi-headset text-gold"></i><h3>貼心全程支援</h3><p>旅途中若有專人協助<br>安心無憂</p></div>
+    </div></div></section>
+
+    <section class="section-pad booking" id="booking"><div class="container"><div class="row align-items-center g-5"><div class="col-lg-4"><h2>立即預約 <span class="text-gold">免費</span> 一對一<br>專屬行程企劃</h2><ul class="booking-list"><li><i class="bi bi-check-circle"></i>專人回覆，快速規劃</li><li><i class="bi bi-check-circle"></i>客製行程，彈性調整</li><li><i class="bi bi-check-circle"></i>服務免費，安心預約</li></ul></div><div class="col-lg-6 offset-lg-1">
+      <form class="booking-form" id="consultForm"><div class="row g-3"><div class="col-md-6"><label class="form-label" for="name">聯絡姓名</label><input class="form-control" id="name" name="name" placeholder="請輸入您的姓名" required></div><div class="col-md-6"><label class="form-label" for="phone">電話</label><input class="form-control" id="phone" name="phone" type="tel" placeholder="請輸入手機號碼" required></div><div class="col-md-6"><label class="form-label" for="destination">預計前往</label><select class="form-select" id="destination" name="destination" required><option value="">請選擇</option><option>日本</option><option>韓國</option><option>日本與韓國</option></select></div><div class="col-md-6"><label class="form-label" for="people">旅遊人數</label><select class="form-select" id="people" name="people" required><option value="">請選擇</option><option>1–2 人</option><option>3–5 人</option><option>6–10 人</option><option>11 人以上</option></select></div><div class="col-12"><button class="btn btn-gold w-100 py-3" type="submit">限時免費｜預約專屬旅遊顧問 <i class="bi bi-chevron-right ms-2"></i></button></div><div class="col-12"><p class="privacy mb-0"><i class="bi bi-lock-fill me-1"></i>我們重視您的隱私，您的資料僅供行程規劃與聯繫使用，絕不會外洩。</p></div></div></form>
+    </div></div></div></section>
+  </main>
+  <footer><div class="container d-flex flex-column flex-md-row justify-content-between text-center gap-2"><span class="serif text-white">華梵旅遊</span><span>用心規劃每一段值得珍藏的旅程</span><span>© 2026 華梵旅遊</span></div></footer>
+  <a class="back-top" href="#top" aria-label="回到頁首"><i class="bi bi-chevron-up"></i></a>
+  <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3"><div id="successToast" class="toast text-bg-success border-0" role="status" aria-live="polite"><div class="d-flex"><div class="toast-body">預約資料已送出，我們將儘快與您聯繫！</div><button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="關閉"></button></div></div></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('consultForm').addEventListener('submit',function(e){e.preventDefault();if(this.checkValidity()){bootstrap.Toast.getOrCreateInstance(document.getElementById('successToast')).show();this.reset()}else{this.classList.add('was-validated')}});
+    document.querySelectorAll('#mainNav .nav-link').forEach(function(link){link.addEventListener('click',function(){var menu=document.getElementById('mainNav');if(menu.classList.contains('show')){bootstrap.Collapse.getOrCreateInstance(menu).hide()}})});
+  </script>
+</body>
+</html>
